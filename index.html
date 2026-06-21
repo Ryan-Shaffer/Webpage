@@ -3,25 +3,33 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dynamic Product Roadmap</title>
+<title>Product Roadmap</title>
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="container">
-  <header>
-    <h1>Product Roadmap</h1>
-    <p>Building the future, step by step.</p>
-    <div class="filters">
-      <button class="filter active" data-filter="all">All</button>
-      <button class="filter" data-filter="planned">Planned</button>
-      <button class="filter" data-filter="progress">In Progress</button>
-      <button class="filter" data-filter="completed">Completed</button>
-    </div>
-  </header>
+<div class="hero">
+  <h1>Product Roadmap</h1>
+  <p>Building the future, one milestone at a time.</p>
 
-  <div id="timeline"></div>
+  <div class="controls">
+    <button class="filter active" data-filter="all">All</button>
+    <button class="filter" data-filter="planned">Planned</button>
+    <button class="filter" data-filter="progress">In Progress</button>
+    <button class="filter" data-filter="completed">Completed</button>
+    <button id="themeToggle">🌙 Dark Mode</button>
+  </div>
 </div>
 
-<script src="script.js"></script>
+<div class="timeline-wrapper">
+  <div id="timeline" class="timeline"></div>
+</div>
+
+<section class="feedback">
+  <h2>We'd love your feedback</h2>
+  <p>Help shape the roadmap by sharing ideas and feature requests.</p>
+  <button>Give Feedback</button>
+</section>
+
+<script src="roadmap.js"></script>
 </body>
 </html>
